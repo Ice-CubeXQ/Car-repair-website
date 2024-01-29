@@ -171,6 +171,7 @@
     &__table {
         position: relative;
         display: grid;
+        z-index: 2;
         @media (min-width: $mobileSmall) {
             grid-template-columns: repeat(3, 1fr);
             @media (max-width: $mobile) {
@@ -189,6 +190,22 @@
     &__link {
         justify-self: center;
     }
+
+    // .services__decore-bottom
+    &__decore-bottom {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        right: -20.7%;
+        width: 63%;
+        @media (max-width: $pc) {
+            right: 0;
+        }
+    }
+    // .services__decore-bottom-image-ibg
+    &__decore-bottom-image-ibg {
+        padding-bottom: percent(450, 642);
+    }
 }
 
 .item-services {
@@ -205,10 +222,7 @@
     transition: box-shadow 0.3s ease 0s;
     @media (any-hover: hover) {
         &:hover {
-            box-shadow:
-                0 4px 6px rgba(0, 0, 0, 0.1),
-                0 8px 10px rgba(0, 0, 0, 0.1),
-                0 16px 24px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.1), 0 16px 24px rgba(0, 0, 0, 0.1);
         }
     }
     // .item-services__icon
@@ -239,11 +253,12 @@
 
 //========================================================================================================================================================
 .appointment {
-    @include adaptiveValue("padding-top", 130, 60);
-    @include adaptiveValue("padding-bottom", 210, 120);
     background-color: $mainBlue;
     // .appointment__container
     &__container {
+        @include adaptiveValue("padding-top", 130, 60);
+        @include adaptiveValue("padding-bottom", 210, 120);
+        position: relative;
         display: flex;
         @media (min-width: $mobile) {
             justify-content: space-between;
@@ -254,11 +269,30 @@
         column-gap: rem(10);
         row-gap: rem(30);
     }
+
+    // .appointment__decore
+    &__decore {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: -20.7%;
+        width: 63%;
+        @media (max-width: $pc) {
+            right: 0;
+        }
+    }
+    // .appointment__decore-image-ibg
+    &__decore-image-ibg {
+        padding-bottom: percent(450, 642);
+    }
+
     // .appointment__form
     &__form {
+        z-index: 2;
     }
     // .appointment__info
     &__info {
+        z-index: 2;
         font-weight: 900;
         text-align: center;
         color: #fff;
