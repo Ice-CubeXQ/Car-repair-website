@@ -1,0 +1,51 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-flex;
+	padding: 9px 45px 9px 19px;
+	font-size: rem(12);
+	font-weight: 700;
+	line-height: math.div(24, 12);
+	text-transform: uppercase;
+	background-color: $mainRed;
+	letter-spacing: em(0.15, 12);
+	display: flex;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	span {
+		z-index: 3;
+	}
+	&::before {
+		position: absolute;
+		top: 50%;
+		right: 8px;
+		transform: translate(0px, -50%);
+		font-size: rem(16);
+		z-index: 2;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		width: 43px;
+		transition: width 0.5s ease 0s;
+		height: 100%;
+		display: block;
+		background: url("@img/button/figura.svg") 0 0 / cover no-repeat;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			&::after {
+				width: 200%;
+			}
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}
