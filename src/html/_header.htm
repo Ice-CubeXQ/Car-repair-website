@@ -1,41 +1,70 @@
 <header class="header">
 	<div class="header__container">
-		<div class="header__row header-info">
-			<a href="#" class="header-info__logo"><img src="@img/header/Logo.png" alt="Logo"></a>
-			<div class="header-info__items">
-				<div class="header-info__item item-info">
-					<div class="item-info__icon _icon-clock"></div>
-					<div class="item-info__content">
-						<h3 class="item-info__name">SERVICE HOURS</h3>
-						<p class="item-info__text">Mon - Sat: 7:00 am - 6:00 pm</p>
+
+		<div class="header__floor first-header-floor">
+			<a href="#" class="first-header-floor__logo"><img src="@img/header/Logo.png" alt=""></a>
+			<div class="first-header-floor__info">
+
+				<div class="first-header-floor__item header-item">
+					<div class="header-item__icon _icon-clock"></div>
+					<div class="header-item__content">
+						<h4 class="header-item__name">SERVICE HOURS</h4>
+						<div class="header-item__info">Mon - Sat: 7:00 am - 6:00 pm</div>
 					</div>
 				</div>
-				<div class="header-info__item item-info">
-					<div class="item-info__icon _icon-phone"></div>
-					<div class="item-info__content">
-						<h3 class="item-info__name">CALL US</h3>
-						<p class="item-info__text">(555) Car-Repair</p>
+
+				<div class="first-header-floor__item header-item">
+					<div class="header-item__icon _icon-phone"></div>
+					<div class="header-item__content">
+						<h4 class="header-item__name">CALL US</h4>
+						<div class="header-item__info">(555) Car-Repair</div>
 					</div>
 				</div>
-				<a href="#" class="header-info__link button _icon-arrow"><span>Make an Appointment</span></a>
+
+				<a href="#" class="first-header-floor__link button _icon-arrow"><span>Make an Appointment</span></a>
+
 			</div>
 		</div>
-		<div class="header__row header-navbar">
-			<div class="header-navbar__menu menu">
+
+		<div class="header__floor second-header-floor">
+
+			<div class="second-header-floor__menu menu">
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
 				<nav class="menu__body">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="" class="menu__link">Services</a></li>
+						<li class="menu__item">
+							<span class="menu__link">Services</span>
+							<ul class="menu__sub-menu sub-menu">
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Oil Change</a></li>
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Brake Service</a></li>
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Transmission Service</a></li>
+							</ul>
+						</li>
 						<li class="menu__item"><a href="" class="menu__link">Specials</a></li>
 						<li class="menu__item"><a href="" class="menu__link">Estimates</a></li>
 						<li class="menu__item"><a href="" class="menu__link">Reviews</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Shop</a></li>
+						<li class="menu__item">
+							<span class="menu__link">Shop</span>
+							<ul class="menu__sub-menu sub-menu">
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Engine parts</a></li>
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Brake systems</a></li>
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Cooling systems</a></li>
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Tires and wheels</a></li>
+							</ul>
+						</li>
 						<li class="menu__item"><a href="" class="menu__link">About</a></li>
 					</ul>
 				</nav>
 			</div>
-			<div class="header-navbar__buy-search">
 
+			<div class="second-header-floor__utility">
+				<div class="second-header-floor__search search">
+					<div class="search__icon _icon-search"></div>
+					<form action="#">
+						<input autocomplete="off" type="text" name="form[search]" placeholder="Search" class="input">
+					</form>
+				</div>
+				<a href="#" class="second-header-floor__link _icon-shopping-cart"></a>
 			</div>
 		</div>
 	</div>
