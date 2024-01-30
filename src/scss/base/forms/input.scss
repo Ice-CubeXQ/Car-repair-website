@@ -26,6 +26,14 @@ textarea {
 	}
 	&._error {
 	}
+	&--search {
+		padding: 2px 5px;
+		font-size: rem(12);
+		&._form-focus {
+			outline: 1px solid #02133c8d;
+			// outline: none;
+		}
+	}
 }
 textarea.input {
 	resize: none;
