@@ -1,20 +1,20 @@
 # Car Repair Website
 
-## Описание
+## Description
 
-Этот проект представляет собой веб-сайт для автосервиса "Car Repair". Сайт предназначен для предоставления информации о услугах, которые предлагает автосервис, контактной информации и других важных аспектах, связанных с обслуживанием и ремонтом автомобилей.
+This project is a website for the "Car Repair" auto service. The website is designed to provide information about the services offered by the auto service, contact information, and other important aspects related to car maintenance and repair.
 
-## Функциональности
+## Functionalities
 
-- **Главная страница**: Основная информация о компании, ее услугах и контактная информация.
-- **Услуги**: Список услуг, предоставляемых автосервисом, с описаниями и возможными опциями.
-- **Галерея**: Фотографии автосервиса, мастеров и выполненных работ.
-- **Контакты**: Форма обратной связи, адрес и телефон автосервиса.
+- **Home Page**: Main information about the company, its services, and contact information.
+- **Services**: List of services provided by the auto service, with descriptions and possible options.
+- **Contact**: Feedback forms, address, and phone number of the auto service.
 
-## Технологии
+## Technologies
 
-Проект создан с использованием следующих технологий:
+The project is built using the following technologies:
 
 - HTML5
 - CSS3
 - JavaScript
+
