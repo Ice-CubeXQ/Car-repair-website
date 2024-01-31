@@ -17,3 +17,4 @@ The project is built using the following technologies:
 - HTML5
 - CSS3
 - JavaScript
+
