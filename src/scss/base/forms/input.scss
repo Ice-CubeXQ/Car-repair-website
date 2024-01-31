@@ -29,9 +29,10 @@ textarea {
 	&--search {
 		padding: 2px 5px;
 		font-size: rem(12);
+		border: 1px solid #4b4b4b53;
 		&._form-focus {
-			outline: 1px solid #02133c8d;
-			// outline: none;
+			outline: none;
+			border: 1px solid #4b4b4b53;
 		}
 	}
 }

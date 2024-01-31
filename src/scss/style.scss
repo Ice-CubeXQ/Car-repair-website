@@ -89,6 +89,7 @@ body {
 */
 @if ($responsiveType==1) {
 	// Отзывчивая
+
 	[class*="__container"] {
 		@if ($maxWidthContainer>0) {
 			max-width: rem($maxWidthContainer);
@@ -98,6 +99,9 @@ body {
 		@if ($containerPadding>0) {
 			padding: 0 rem(math.div($containerPadding, 2));
 		}
+	}
+	[class*="__container--wide"] {
+		max-width: rem(1080);
 	}
 } @else {
 	// По брейк-поинтам
