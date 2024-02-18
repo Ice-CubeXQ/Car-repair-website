@@ -45,6 +45,12 @@
     }
     // .footer-main__link
     &__link {
+        transition: color 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $mainBlue;
+            }
+        }
     }
 }
 
@@ -67,6 +73,12 @@
     }
     // .footer-links__link
     &__link {
+        transition: color 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $mainRed;
+            }
+        }
     }
 }
 .footer-contacts {

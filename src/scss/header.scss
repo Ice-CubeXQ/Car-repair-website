@@ -152,7 +152,9 @@
 	}
 	// .search__form
 	&__form {
-		transition: all 0.3s ease 0s;
+		.loaded & {
+			transition: all 0.3s ease 0s;
+		}
 		transform: translate(150px, 0px);
 		display: flex;
 		column-gap: rem(5);
@@ -319,7 +321,9 @@
 		display: none;
 	}
 	position: absolute;
-	transition: all 0.3s ease 0s;
+	.loaded & {
+		transition: all 0.3s ease 0s;
+	}
 	visibility: hidden;
 	opacity: 0;
 	transform-origin: 0 0;
