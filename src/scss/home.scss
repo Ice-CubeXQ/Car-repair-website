@@ -223,7 +223,10 @@
     transition: box-shadow 0.3s ease 0s;
     @media (any-hover: hover) {
         &:hover {
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.1), 0 16px 24px rgba(0, 0, 0, 0.1);
+            box-shadow:
+                0 4px 6px rgba(0, 0, 0, 0.1),
+                0 8px 10px rgba(0, 0, 0, 0.1),
+                0 16px 24px rgba(0, 0, 0, 0.1);
         }
     }
     // .item-services__icon
@@ -551,7 +554,7 @@
     position: relative;
     padding-bottom: percent(500, 1440);
     @media (max-width: $mobile) {
-        // padding-bottom: percent(9, 21);
+        padding-bottom: percent(9, 21);
     }
     // .video-module__item
     &__item {
@@ -570,13 +573,21 @@
     // .video-module__content
     &__content {
         position: absolute;
-        max-width: rem(411);
+        @media (min-width: $mobile) {
+            max-width: rem(411);
+            right: 0;
+        }
         @include adaptiveValue("top", 112, 10);
-        right: 0;
     }
 }
 
 .content-video {
+    display: grid;
+    opacity: 1;
+    transition: opacity 0.3s ease 0s;
+    ._play-video & {
+        opacity: 0;
+    }
     // .content-video__text
     &__text {
         @include adaptiveValue("font-size", 36, 16);
@@ -586,6 +597,9 @@
     }
     // .content-video__play-button
     &__play-button {
+        @media (max-width: $mobileSmall) {
+            justify-self: center;
+        }
         @include adaptiveValue("width", 140, 60);
         @include adaptiveValue("height", 140, 60);
         position: relative;

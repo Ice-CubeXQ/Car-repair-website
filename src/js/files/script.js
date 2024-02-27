@@ -83,9 +83,9 @@ if (videoModule) {
     const video = videoModule.querySelector("video");
 
     if (videoModule.classList.contains("_play-video")) {
-      video.pause();
-    } else {
       video.play();
+    } else {
+      video.pause();
     }
   });
 }
