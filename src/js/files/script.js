@@ -73,3 +73,19 @@ searchLine.addEventListener("input", function () {
 
   searchResultList.innerHTML = searchResultsHTML;
 });
+
+const videoModule = document.querySelector(".video-module");
+
+if (videoModule) {
+  videoModule.addEventListener("click", function (e) {
+    videoModule.classList.toggle("_play-video");
+
+    const video = videoModule.querySelector("video");
+
+    if (videoModule.classList.contains("_play-video")) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+}
